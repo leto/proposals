@@ -2,37 +2,52 @@ Title: Math::GSL, Math::MatrixReal and PDL Interoperability
 
 Name: Jonathan Leto
 
-Duration:  20 hrs
+Duration:  28 hrs
 
 Synopsis: 
 
-Allow Math::GSL::Matrix and Math::MatrixReal objects to be converted to piddles and vice versa for compatible piddles.
-This will provide an "easy onramp" for a user of any one of these modules to use features from the others in the same 
-project. At a social level, this should have the effect of integrating similar Perl communities and giving people
-doing scientific computing with Perl more options and fewer arbitrary barriers.
-
+    Allow Math::GSL::Matrix and Math::MatrixReal objects to be converted to
+    piddles and vice versa for compatible piddles.  This will provide an "easy
+    onramp" for a user of any one of these modules to use features from the
+    others in the same project. At a social level, this should have the effect
+    of integrating similar Perl communities and giving people doing scientific
+    computing with Perl more options and fewer arbitrary barriers.
 
 Deliverables:
+
+This setup code is necessary for the following list of deliverbles.
+
     my $matrix     = Math::GSL->Matrix->new(10);
     my $matrix_real= Math::MatrixReal->new(10);
 
 New methods to Math::GSL::Matrix and Math::MatrixReal
 
     my $A          = Math::GSL::Matrix->new_from_pdl($pdl)
+    my $B          = Math::GSL::Matirx->new_from_matrixreal($matrix_real);
     my $pdl1       = $matrix->as_pdl();
     my $mr         = $matrix->as_matrixreal();
 
-    my $B          = Math::MatrixReal->new_from_pdl($pdl);
+    my $C          = Math::MatrixReal->new_from_pdl($pdl);
+    my $D          = Math::MatrixReal->new_from_gsl($matrix);
     my $pdl2       = $matrix_real->as_pdl();
     my $gsl        = $matrix_real->as_gsl();
 
-Other Possibilities:
+Future Possibilities:
+
     Creating Matrix objects from slices of higher-dimensional piddles 
+    Implement in SWIG/XS for speed
 
 Project Schedule:
 
+    Roughly 3 hours per function ( 1 hour for implementation and 2 hours for tests) 
+                   8x3 = 24 hours
+    Documentation      =  4 hours
+
 Biography:
-Current maintainer of Math::GSL, Math::MatrixReal and Math::ODE. Member
-of Portland Perl Mongers (PDX.pm). Mentor for Math::GSL in Google Summer
-of Code 2008.
+
+    Current maintainer of Math::GSL, Math::MatrixReal and Math::ODE. Member of
+    Portland Perl Mongers (PDX.pm). Mentor for Math::GSL in Google Summer of
+    Code 2008. I defended my thesis for a masters in Mathematics in April of
+    2008 and one chapter of it was accepted as a paper to Communications in
+    Nonlinear Science and Numerical Simulation
 
