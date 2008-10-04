@@ -1,0 +1,38 @@
+Title: Math::GSL, Math::MatrixReal and PDL Interoperability
+
+Name: Jonathan Leto
+
+Duration:  20 hrs
+
+Synopsis: 
+
+Allow Math::GSL::Matrix and Math::MatrixReal objects to be converted to piddles and vice versa for compatible piddles.
+This will provide an "easy onramp" for a user of any one of these modules to use features from the others in the same 
+project. At a social level, this should have the effect of integrating similar Perl communities and giving people
+doing scientific computing with Perl more options and fewer arbitrary barriers.
+
+
+Deliverables:
+    my $matrix     = Math::GSL->Matrix->new(10);
+    my $matrix_real= Math::MatrixReal->new(10);
+
+New methods to Math::GSL::Matrix and Math::MatrixReal
+
+    my $A          = Math::GSL::Matrix->new_from_pdl($pdl)
+    my $pdl1       = $matrix->as_pdl();
+    my $mr         = $matrix->as_matrixreal();
+
+    my $B          = Math::MatrixReal->new_from_pdl($pdl);
+    my $pdl2       = $matrix_real->as_pdl();
+    my $gsl        = $matrix_real->as_gsl();
+
+Other Possibilities:
+    Creating Matrix objects from slices of higher-dimensional piddles 
+
+Project Schedule:
+
+Biography:
+Current maintainer of Math::GSL, Math::MatrixReal and Math::ODE. Member
+of Portland Perl Mongers (PDX.pm). Mentor for Math::GSL in Google Summer
+of Code 2008.
+
