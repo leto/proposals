@@ -32,6 +32,10 @@ New methods to Math::GSL::Matrix and Math::MatrixReal
     my $pdl2       = $matrix_real->as_pdl();
     my $gsl        = $matrix_real->as_gsl();
 
+Project Details:
+    Preliminary research
+
+
 Future Possibilities:
 
     Creating Matrix objects from slices of higher-dimensional piddles 
