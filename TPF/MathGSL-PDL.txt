@@ -60,5 +60,6 @@ Biography:
     Portland Perl Mongers (PDX.pm). Mentor for Math::GSL in Google Summer of
     Code 2008. I defended my thesis for a masters in Mathematics in April of
     2008 and one chapter of it was accepted as a paper to Communications in
-    Nonlinear Science and Numerical Simulation
+    Nonlinear Science and Numerical Simulation. Currently working as a 
+    software developer for Rentrak Corp, http://www.rentrak.com .
 
