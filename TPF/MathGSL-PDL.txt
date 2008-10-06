@@ -19,6 +19,7 @@ This setup code is necessary for the following list of deliverbles.
 
     my $matrix     = Math::GSL->Matrix->new(10);
     my $matrix_real= Math::MatrixReal->new(10);
+    my $pdl        = PDL::Matrix->pdl( .... ); # 10x10 matrix
 
 New methods to Math::GSL::Matrix and Math::MatrixReal
 
