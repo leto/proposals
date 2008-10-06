@@ -33,7 +33,14 @@ New methods to Math::GSL::Matrix and Math::MatrixReal
     my $gsl        = $matrix_real->as_gsl();
 
 Project Details:
-    Preliminary research
+
+I am extremely familiar with the internals of Math::MatrixReal, so integration with 
+that module will not pose any surprises. 
+
+After a cursory look at the source of PDL::Core and PDL::Matrix, I beleive that I can use
+the nslice() method to extract values out and convert them to either Math::GSL or
+Math::MatrixReal objects. One question arises is: What do you do when you come to a complex
+value in a PDL::Matrix that is being converted to a Math::MatrixReal object?
 
 
 Future Possibilities:
