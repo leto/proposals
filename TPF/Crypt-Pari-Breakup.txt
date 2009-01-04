@@ -41,7 +41,9 @@ http://gmplib.org/manual/Number-Theoretic-Functions.html#Number-Theoretic-Functi
 
 Future Possibilities:
 
-Porting various Crypt::* modules away from Pari. Support for Prime numbers in Perl CORE.
+Provable Prime algorithms
+Porting various Crypt::* modules away from Pari
+Support for Prime numbers in Perl CORE
 
 Project Schedule:
 
