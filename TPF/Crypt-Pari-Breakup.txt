@@ -1,0 +1,46 @@
+Title: Perl interface to GMP Number Theoretic Functions
+
+Name: Jonathan Leto
+
+Duration: 4 months
+
+Synopsis:
+
+Currently many of the CPAN modules in the Perl crypto toolchain have a direct dependence on Math::Pari
+functionality, most commonly the following functions:
+
+    mod, sqrt, log, gcd, lcm, floor, isprime, nextprime, factor
+
+Only the last three functions relating to primality and factoring need to be implemented to break
+dependence on PARI. The GNU Multi Precision library has mpz_probab_prime_p() which calculates
+whether a number is a probable prime, while the PARI function isprime() can determine a provable
+prime number. Having access to mpz_probab_prime_p is the first step to building a provable prime
+algorithm that is accessible from Perl. The nextprime() function is equivalent to mpz_nextprime(),
+so that requires no extra work. The factor() function does not have a direct equivalent in the GMP
+library, but a factoring function can of course be written with GMP primitives and many examples
+of factoring algorithms using GMP are available.
+
+Deliverables:
+
+Math::GMP already exists and provides a simplified interface to the GMP library
+that emulates Math::BigInt . This proposal will create CPAN modules under the
+Math::GMP::SWIG namespace, and will initially provide an interface to the Number Theoretic
+functions of the the GMP library.
+
+Project Details:
+
+The infrastructure for a complete interface to GMP via SWIG will be in place but this
+proposal is only for access to the functions listed here:
+
+http://gmplib.org/manual/Number-Theoretic-Functions.html#Number-Theoretic-Functions
+
+Future Possibilities:
+
+Porting various Crypt::* modules away from Pari. Support for Prime numbers in Perl CORE.
+
+Project Schedule:
+
+Biography:
+
+Current maintainer of Math::GSL, Math::MatrixReal and Math::ODE. Member of
+Portland Perl Mongers (PDX.pm). Mentor for Math::GSL in Google Summer of Code 2008.
