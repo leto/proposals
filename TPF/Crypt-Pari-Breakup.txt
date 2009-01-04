@@ -2,7 +2,7 @@ Title: Perl interface to GMP Number Theoretic Functions
 
 Name: Jonathan Leto
 
-Duration: 4 months
+Duration: 3 months
 
 Synopsis:
 
@@ -41,7 +41,8 @@ http://gmplib.org/manual/Number-Theoretic-Functions.html#Number-Theoretic-Functi
 
 Future Possibilities:
 
-Provable Prime algorithms
+Provable Prime algorithm
+Factorization algorithm
 Porting various Crypt::* modules away from Pari
 Support for Prime numbers in Perl CORE
 
