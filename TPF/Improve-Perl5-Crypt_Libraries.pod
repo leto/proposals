@@ -1,0 +1,58 @@
+
+=head1 Improve Perl 5 Crypt:: Libraries
+
+=over 1
+
+=item Name:
+
+Jonathan Leto
+
+=item Email:
+
+Jonathan Leto <jonathan@leto.net>
+
+=item Amount Requested:
+
+$5000
+
+=back
+
+=head2 Synopsis
+
+Currently many Perl cryptography libraries rely on the PARI library via Math::Pari to
+access just a few number theory routines. 
+
+=head2 Benefits to the Perl Community
+
+
+=head2 Deliverables
+
+Quantifiable results e.g. "Improve X modules in ways Y and Z",
+"Write 3 articles for X website".
+
+=head2 Project Details
+
+A more detailed description.
+
+If you aren't the primary maintainer of the project you want funding
+for, show that you have approval from the primary maintainer.
+
+=head2 Inch-stones
+
+If your grant is going to take longer than a week it's useful to break
+down your project into small chunks. This helps everybody track of
+progress, and lets you see if your project schedule is practical!
+
+Try and think in "inch-stones" rather than "mile-stones". Breaking down
+your grant into many small goals makes it harder to overlook
+difficulties, and easier to see progress as you complete your grant.
+
+=head2 Project Schedule
+
+How long will the project take? When can you begin work?
+
+=head2 Bio
+
+Who are you? What makes you the best person to work on this project?
+
+=cut
