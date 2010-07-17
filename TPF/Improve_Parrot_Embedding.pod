@@ -1,0 +1,80 @@
+
+=head1 Improve Parrot Embed/Extend Subsystem Tests and Documentation
+
+=over 1
+
+=item Name:
+
+Jonathan "Duke" Leto.
+
+=item Email:
+
+jonathan@leto.net
+
+=item Amount Requested:
+
+How much is your project worth?
+
+=back
+
+=head2 Synopsis
+
+Currently the Parrot Embedding subsystem is under-tested and under-documented.
+This grant proposes to add documentation for all public Embed/Extend API
+functions, write tests to increase the code coverage statistics for
+the Embed/Extend API to at least 95%, and update the Parrot Developer Docs (PDDs)
+where errors or omissions are found.
+
+=head2 Benefits to the Perl Community
+
+There are many projects that will benefit from a completely documentated and
+thoroughly tested Parrot Embed Subsystem. Rakudo Perl 6 is built on Parrot, so
+people who want to embed Rakudo Perl 6 in any other application will benefit.
+Blizkost is a bridge between Perl 5 and Parrot, and embeds both, so will greatly
+benefit from good documentation and tests.  PL/Parrot is a project that aims to
+embed Parrot in the PostgreSQL database. Because Parrot is embedded in
+PostgreSQL, any language that runs on Parrot then can easily be embedded.
+PL/Perl6 is part of the PL/Parrot project, which loads Rakudo Perl 6 bytecode
+and therefore embeds a Perl 6 interpreter inside of PostgreSQL, for use in
+writed stored procedures. All of these projects will grealy benefit from
+complete documentation, as well any any future applications that want to embed
+or extend Parrot.
+
+
+=head2 Deliverables
+
+Quantifiable results e.g. "Improve X modules in ways Y and Z",
+"Write 3 articles for X website".
+
+=head2 Project Details
+
+A more detailed description.
+
+If you aren't the primary maintainer of the project you want funding
+for, show that you have approval from the primary maintainer.
+
+=head2 Inch-stones
+
+If your grant is going to take longer than a week it's useful to break
+down your project into small chunks. This helps everybody track of
+progress, and lets you see if your project schedule is practical!
+
+Try and think in "inch-stones" rather than "mile-stones". Breaking down
+your grant into many small goals makes it harder to overlook
+difficulties, and easier to see progress as you complete your grant.
+
+=head2 Project Schedule
+
+How long will the project take? When can you begin work?
+
+=head2 Completeness Criteria
+
+Describe how your grant can be evaluated. For instance, code will be
+merged in Perl tree, or a module will be released to CPAN with the
+specified features, etc.
+
+=head2 Bio
+
+Who are you? What makes you the best person to work on this project?
+
+=cut
