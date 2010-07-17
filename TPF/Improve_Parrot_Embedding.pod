@@ -43,8 +43,19 @@ or extend Parrot.
 
 =head2 Deliverables
 
-Quantifiable results e.g. "Improve X modules in ways Y and Z",
-"Write 3 articles for X website".
+Code coverage for the Embed/Extend API can be found at:
+
+http://tapir2.ro.vutbr.cz/cover/cover-results/
+
+According to the code coverage stats for Parrot SVN r48100, the code coverage
+of src/embed.c is 65.2%, src/extend.c is 71.2% and src/extend-vtable.c is 5.3%.
+All of these will be raised to at least 95% by writing the appropriate tests.
+
+The embed API documentation in docs/embed.pod contains many parts which are missing
+documentation, such as the "Lexicals", "Type Signatures" and "Constants" sections.
+This will be filled with the appropriate documenation as it works currently.
+
+L<http://docs.parrot.org/parrot/devel/html/docs/embed.pod.html>
 
 =head2 Project Details
 
