@@ -51,6 +51,12 @@ difficulties, and easier to see progress as you complete your grant.
 
 How long will the project take? When can you begin work?
 
+=head2 Completeness Criteria
+
+Describe how your grant can be evaluated. For instance, code will be
+merged in Perl tree, or a module will be released to CPAN with the
+specified features, etc.
+
 =head2 Bio
 
 Who are you? What makes you the best person to work on this project?
