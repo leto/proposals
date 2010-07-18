@@ -80,9 +80,10 @@ How long will the project take? When can you begin work?
 
 =head2 Completeness Criteria
 
-Describe how your grant can be evaluated. For instance, code will be
-merged in Perl tree, or a module will be released to CPAN with the
-specified features, etc.
+Since this work will not change any features, it can be committed directly
+to Parrot SVN trunk incrementally. When the code coverage statistics have
+all reached 95% and the missing sections of documentation have been written,
+this grant will be considered complete.
 
 =head2 Bio
 
