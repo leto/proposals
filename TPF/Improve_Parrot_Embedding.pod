@@ -13,7 +13,7 @@ jonathan@leto.net
 
 =item Amount Requested:
 
-How much is your project worth?
+$1500
 
 =back
 
@@ -21,9 +21,10 @@ How much is your project worth?
 
 Currently the Parrot Embedding subsystem is under-tested and under-documented.
 This grant proposes to add documentation for all public Embed/Extend API
-functions, write tests to increase the code coverage statistics for
-the Embed/Extend API to at least 95%, and update the Parrot Developer Docs (PDDs)
-where errors or omissions are found.
+functions, write tests to increase the code coverage statistics for the
+Embed/Extend API to at least 95%, and update the Parrot Developer Docs (PDDs)
+where errors or omissions are found. Any bugs found on the way that cannot be
+easily fixed will be reported on the Parrot Trac bug-tracker with test cases.
 
 =head2 Benefits to the Perl Community
 
@@ -82,11 +83,27 @@ How long will the project take? When can you begin work?
 
 Since this work will not change any features, it can be committed directly
 to Parrot SVN trunk incrementally. When the code coverage statistics have
-all reached 95% and the missing sections of documentation have been written,
+all reached >= 95% and the missing sections of documentation have been written,
 this grant will be considered complete.
 
 =head2 Bio
 
-Who are you? What makes you the best person to work on this project?
+I've hacked on Parrot Virtual Machine ever since I attended a Parrot Hackathon
+in 2008. I started off hacking on the Perl 6 test suite, after getting a commit
+bit from Larry at the hackathon due to my interest in fixing some bugs and
+adding tests relating to math functions and complex numbers. This quickly led me
+to bugs in Parrot, and I have mostly been writing tests and fixing bugs for the
+Parrot test suite ever since. I have converted large partions of the test suite
+from Perl 5 to PIR, as well as implementing parts of Test::More and a TAP Parser
+in PIR.
+
+I also hack on a project called PL/Parrot, which embeds Parrot into the PostgreSQL
+database. It is one of the first projects to embed Parrot in other applications, the
+others being mod_parrot and Blizkost. In the course of hacking on PL/Parrot, I have
+written tests for the embedd/extend API and fixed documentation.
+
+Since I am a Parrot Core Developer, I can commit directly to Parrot trunk, which
+is the best scenario, since everyone will benefit incrementally from better code
+coverage and documentation.
 
 =cut
