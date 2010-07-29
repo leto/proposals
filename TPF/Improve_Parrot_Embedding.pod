@@ -117,7 +117,7 @@ to bugs in Parrot, and I have mostly been writing tests and fixing bugs for the
 Parrot test suite ever since. I have converted large partions of the test suite
 from Perl 5 to PIR, as well as implementing parts of Test::More and a TAP Parser
 in PIR. I am also the organization administrator for The Perl Foundation/Parrot
-Foundation in Google Summer of Code, as well as a mentor for Parrot on RTEMS.
+Foundation in Google Summer of Code 2010, as well as a mentor for Parrot on RTEMS [7].
 
 I also hack on a project called PL/Parrot, which embeds Parrot and Rakudo Perl
 6 into the PostgreSQL database. It is one of the first projects to embed Parrot
@@ -130,14 +130,28 @@ Since I am a Parrot Core Developer, I can commit directly to Parrot trunk, which
 is the best scenario, since everyone will benefit incrementally from better code
 coverage and documentation.
 
+As for other credentials, I have a Masters in Mathematics from University of
+Central Florida and have published various papers on differential equations,
+as well as being a coauthor of the Google Summer of Code Mentor Manual [8].
+
 =head2 References
 
 [0] L<http://parrot.org>
+
 [1] L<http://docs.parrot.org/parrot/latest/html/pdds.html>
+
 [2] L<http://rakudo.org>
+
 [3] L<http://pl.parrot.org>
+
 [4] L<http://postgresql.org>
+
 [5] L<http://tapir2.ro.vutbr.cz/cover/cover-results/>
+
 [6] L<http://docs.parrot.org/parrot/devel/html/docs/embed.pod.html>
+
+[7] L<http://rtems.org>
+
+[8] L<http://en.flossmanuals.net/GSoCMentoringGuide>
 
 =cut
