@@ -50,7 +50,7 @@ http://tapir2.ro.vutbr.cz/cover/cover-results/
 
 According to the code coverage stats for Parrot SVN r48100, the code coverage
 of src/embed.c is 65.2%, src/extend.c is 71.2% and src/extend_vtable.c is 5.3%.
-All of these will be raised to at least 98% by writing the appropriate tests.
+All of these will be raised to at least 95% by writing the appropriate tests.
 
 The embed API documentation in docs/embed.pod contains many parts which are missing
 documentation, such as the "Lexicals", "Type Signatures" and "Constants" sections.
@@ -79,13 +79,19 @@ that needs to be clarified will be put to the parrot-dev mailing list.
 
 =head2 Inch-stones
 
-Stuff.
+The first inch-stone will be updating docs/embed.pod to contain the "Lexicals",
+"Type Signatures" and "Constants" sections. This should take one to two weeks.
+
+The next two inch-stones will be to raise extend_vtable.c to 50% and then 95%
+coverage. This splits the work roughly in half, and I expect each to take
+roughly 2 weeks.
 
 =head2 Project Schedule
 
 I expect to be able to work about 5-10 hours per week, starting in October,
 so it does not conflict with Google Summer of Code. I expect that at this
-pace, this grant will take about 2-3 months to finish.
+pace, this grant will take about 2-3 months to finish, taking into account
+that I may not work as much near the holidays.
 
 =head2 Completeness Criteria
 
