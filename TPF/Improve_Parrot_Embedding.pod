@@ -19,21 +19,21 @@ $1500
 
 =head2 Synopsis
 
-Currently the Parrot Embedding subsystem is under-tested and under-documented.
+Currently the Parrot [0] Embedding subsystem is under-tested and under-documented.
 This grant proposes to add documentation for all public Embed/Extend API
 functions, write tests to increase the code coverage statistics for the
-Embed/Extend API to at least 95%, and update the Parrot Developer Docs (PDDs)
+Embed/Extend API to at least 95%, and update the Parrot Developer Docs (PDDs) [1]
 where errors or omissions are found. Any bugs found on the way that cannot be
 easily fixed will be reported on the Parrot Trac bug-tracker with test cases.
 
 =head2 Benefits to the Perl Community
 
 There are many projects that will benefit from a completely documentated and
-thoroughly tested Parrot Embed Subsystem. Rakudo Perl 6 is built on Parrot, so
+thoroughly tested Parrot Embed Subsystem. Rakudo Perl 6 [2] is built on Parrot, so
 people who want to embed Rakudo Perl 6 in any other application will benefit.
 Blizkost is a bridge between Perl 5 and Parrot, and embeds both, so will greatly
-benefit from good documentation and tests.  PL/Parrot is a project that aims to
-embed Parrot in the PostgreSQL database. Because Parrot is embedded in
+benefit from good documentation and tests.  PL/Parrot [3] is a project that aims to
+embed Parrot in the PostgreSQL database [4]. Because Parrot is embedded in
 PostgreSQL, any language that runs on Parrot then can easily be embedded.
 PL/Perl6 is part of the PL/Parrot project, which loads Rakudo Perl 6 bytecode
 and therefore embeds a Perl 6 interpreter inside of PostgreSQL, for use in
@@ -44,19 +44,19 @@ or extend Parrot.
 
 =head2 Deliverables
 
-Code coverage for the Embed/Extend API can be found at:
+According to the code coverage stats [5] for Embed Extend API in Parrot Subversion
+revision 48100, the code coverage of src/embed.c is 65.2%, src/extend.c is
+71.2% and src/extend_vtable.c is 5.3%.  All of these will be raised to at least
+95% by writing the appropriate tests.
 
-http://tapir2.ro.vutbr.cz/cover/cover-results/
-
-According to the code coverage stats for Parrot SVN r48100, the code coverage
-of src/embed.c is 65.2%, src/extend.c is 71.2% and src/extend_vtable.c is 5.3%.
-All of these will be raised to at least 95% by writing the appropriate tests.
-
-The embed API documentation in docs/embed.pod contains many parts which are missing
+The embed API documentation in docs/embed.pod [6] contains many parts which are missing
 documentation, such as the "Lexicals", "Type Signatures" and "Constants" sections.
 This will be filled with the appropriate documenation as it works currently.
 
-L<http://docs.parrot.org/parrot/devel/html/docs/embed.pod.html>
+
+A blog post will also be made on a blog syndicated by Perlsphere, describing
+how the grant proceeded, lessons learned, bugs found, a summary of tests written
+and links to the new documentation.
 
 =head2 Project Details
 
@@ -86,19 +86,26 @@ The next two inch-stones will be to raise extend_vtable.c to 50% and then 95%
 coverage. This splits the work roughly in half, and I expect each to take
 roughly 2 weeks.
 
+The tests for embed.c are fewer but will be trickier, so I expect to have
+two inch-stones, one for 80% coverage and the other for 95% coverage, and
+I expect each to take about 2-3 weeks.
+
+The last inch-stone will be the easiest: writing and publishing the blog post.
+I expect this to take about a day.
+
 =head2 Project Schedule
 
 I expect to be able to work about 5-10 hours per week, starting in October,
 so it does not conflict with Google Summer of Code. I expect that at this
 pace, this grant will take about 2-3 months to finish, taking into account
-that I may not work as much near the holidays.
+that I may not work as much around the holidays.
 
 =head2 Completeness Criteria
 
 Since this work will not change any features, it can be committed directly
 to Parrot SVN trunk incrementally. When the code coverage statistics have
-all reached >= 95% and the missing sections of documentation have been written,
-this grant will be considered complete.
+all reached >= 95%, the missing sections of documentation have been written
+and the blog post has been published, this grant will be considered complete.
 
 =head2 Bio
 
@@ -109,15 +116,28 @@ adding tests relating to math functions and complex numbers. This quickly led me
 to bugs in Parrot, and I have mostly been writing tests and fixing bugs for the
 Parrot test suite ever since. I have converted large partions of the test suite
 from Perl 5 to PIR, as well as implementing parts of Test::More and a TAP Parser
-in PIR.
+in PIR. I am also the organization administrator for The Perl Foundation/Parrot
+Foundation in Google Summer of Code, as well as a mentor for Parrot on RTEMS.
 
-I also hack on a project called PL/Parrot, which embeds Parrot into the PostgreSQL
-database. It is one of the first projects to embed Parrot in other applications, the
-others being mod_parrot and Blizkost. In the course of hacking on PL/Parrot, I have
-written tests for the embedd/extend API and fixed documentation.
+I also hack on a project called PL/Parrot, which embeds Parrot and Rakudo Perl
+6 into the PostgreSQL database. It is one of the first projects to embed Parrot
+in other applications, the others being mod_parrot and Blizkost. I believe it
+is the first project to embed Rakudo Perl 6. In the course of hacking on
+PL/Parrot, I have written tests for the Parrot embedd/extend API and fixed
+documentation, as well as contributing patches and tests for Rakudo.
 
 Since I am a Parrot Core Developer, I can commit directly to Parrot trunk, which
 is the best scenario, since everyone will benefit incrementally from better code
 coverage and documentation.
+
+=head2 References
+
+[0] L<http://parrot.org>
+[1] L<http://docs.parrot.org/parrot/latest/html/pdds.html>
+[2] L<http://rakudo.org>
+[3] L<http://pl.parrot.org>
+[4] L<http://postgresql.org>
+[5] L<http://tapir2.ro.vutbr.cz/cover/cover-results/>
+[6] L<http://docs.parrot.org/parrot/devel/html/docs/embed.pod.html>
 
 =cut
