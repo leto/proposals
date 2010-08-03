@@ -37,7 +37,7 @@ embed Parrot in the PostgreSQL database [4]. Because Parrot is embedded in
 PostgreSQL, any language that runs on Parrot then can easily be embedded.
 PL/Perl6 is part of the PL/Parrot project, which loads Rakudo Perl 6 bytecode
 and therefore embeds a Perl 6 interpreter inside of PostgreSQL, for use in
-writed stored procedures. All of these projects will grealy benefit from
+writing stored procedures. All of these projects will grealy benefit from
 complete documentation, as well any any future applications that want to embed
 or extend Parrot.
 
