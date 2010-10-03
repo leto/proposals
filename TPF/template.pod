@@ -1,19 +1,19 @@
 
-=head1 Project Title
+=head1 TITLE
 
 =over 1
 
 =item Name:
 
-Name of proposer.
+Jonathan "Duke" Leto
 
 =item Email:
 
-Where we can contact you!
+jonathan@leto.net
 
 =item Amount Requested:
 
-How much is your project worth?
+$
 
 =back
 
