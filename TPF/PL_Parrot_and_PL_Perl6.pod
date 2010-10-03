@@ -1,0 +1,78 @@
+
+=head1 PL/Parrot and PL/Perl6 Data marshalling improvements
+
+=over 1
+
+=item Name:
+
+Jonathan "Duke" Leto
+
+=item Email:
+
+jonathan@leto.net
+
+=item Amount Requested:
+
+$X
+
+=back
+
+=head2 Synopsis
+
+PL/Parrot allows one to embed Parrot Virtual Machine into PostgreSQL and make
+it available as a stored procedure language. PL/Perl6 uses Rakduo Perl 6 from
+PL/Parrot to enable one to write stored procedures in Perl 6. Basically,
+PL/Perl6 is the sister of PL/Perl and uses PL/Parrot to do all the hard work.
+
+Currently PL/Parrot (and hence PL/Perl6) only know how to deal with the most
+basic PostgreSQL datatypes, such as the various flavors of integers, floats,
+and strings.  This proposals aims to add the ability to for PL/Parrot to handle
+custom datatypes that are aggregates of the currently supported types, as well
+as adding the ability to marshall the row datatype. This will also include
+telling PL/Perl6 how to convert between the newly-supported datatypes and Perl
+6 data structures to represent them.
+
+In addition to adding the above datatypes, end-user documentation in POD format
+for all datatypes will be written and made available at http://pl.parrot.org .
+
+=head2 Benefits to the Perl Community
+
+Why should the Perl Community grant this project?
+
+=head2 Deliverables
+
+Quantifiable results e.g. "Improve X modules in ways Y and Z",
+"Write 3 articles for X website".
+
+=head2 Project Details
+
+A more detailed description.
+
+If you aren't the primary maintainer of the project you want funding
+for, show that you have approval from the primary maintainer.
+
+=head2 Inch-stones
+
+If your grant is going to take longer than a week it's useful to break
+down your project into small chunks. This helps everybody track of
+progress, and lets you see if your project schedule is practical!
+
+Try and think in "inch-stones" rather than "mile-stones". Breaking down
+your grant into many small goals makes it harder to overlook
+difficulties, and easier to see progress as you complete your grant.
+
+=head2 Project Schedule
+
+How long will the project take? When can you begin work?
+
+=head2 Completeness Criteria
+
+Describe how your grant can be evaluated. For instance, code will be
+merged in Perl tree, or a module will be released to CPAN with the
+specified features, etc.
+
+=head2 Bio
+
+Who are you? What makes you the best person to work on this project?
+
+=cut
