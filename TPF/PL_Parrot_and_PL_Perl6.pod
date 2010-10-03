@@ -37,7 +37,9 @@ for all datatypes will be written and made available at http://pl.parrot.org .
 
 =head2 Benefits to the Perl Community
 
-Why should the Perl Community grant this project?
+PL/Perl6 allows people to write stored procedures in their database with Perl 6,
+which has never been possible before. The completion of this grant will put
+the feature set of PL/Perl6 on par with PL/Perl, with regard to datatype handling.
 
 =head2 Deliverables
 
