@@ -53,6 +53,10 @@ Custom data types are aggregates of other basic datatypes, such as
 PL/Parrot will learn how to accept and return SETOF datatypes, which allows
 returning a set of a given datatype.
 
+BYTEA Support: Byte arrays are a very important core PostgreSQL data type, which
+allows storing arbitrary byte arrays (also called bit vectors or blobs). This grant
+will add support to PL/Parrot so that it can accept and return BYTEA's.
+
 =head2 Project Details
 
 A more detailed description.
