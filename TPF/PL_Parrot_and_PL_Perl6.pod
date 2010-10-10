@@ -43,8 +43,15 @@ the feature set of PL/Perl6 on par with PL/Perl, with regard to datatype handlin
 
 =head2 Deliverables
 
-Quantifiable results e.g. "Improve X modules in ways Y and Z",
-"Write 3 articles for X website".
+The results of this grant will be commits to the PL/Parrot repo on github.com,
+as well a stable release containing the above features.
+
+Custom data types are aggregates of other basic datatypes, such as
+
+    CREATE TYPE testrowperl AS (f1 integer, f2 text, f3 text);
+
+PL/Parrot will learn how to accept and return SETOF datatypes, which allows
+returning a set of a given datatype.
 
 =head2 Project Details
 
