@@ -80,16 +80,25 @@ difficulties, and easier to see progress as you complete your grant.
 
 =head2 Project Schedule
 
-How long will the project take? When can you begin work?
+I expect the project to take about three months. A breakdown of
+the order and estimated time to implement each feature:
 
 =head2 Completeness Criteria
 
-Describe how your grant can be evaluated. For instance, code will be
-merged in Perl tree, or a module will be released to CPAN with the
-specified features, etc.
+This grant will be considered complete when the above-added features are
+present in a release of PL/Parrot. PL/Parrot will target PostgreSQL 9.x and the
+latest stable release of Parrot Virtual Machine and Rakudo Perl 6, but support
+for PostgreSQL versions as old as 8.3 is expected.
+
+This release will be available for download on github.com and will
+be released on the PostgreSQL Extension Network, PGXN.
 
 =head2 Bio
 
 Who are you? What makes you the best person to work on this project?
+
+=head2 References
+
+[1] http://www.pgxn.org
 
 =cut
