@@ -1,0 +1,28 @@
+Title:
+
+It is Xmas in your database : PL/Perl6
+
+Abstract:
+
+PL/Perl6 is a new PostgreSQL Procedural Language that allows one to write
+stored procedures in Perl 6.
+
+Full Description:
+
+A running joke in the Perl 6 world used to be that we’ll release a stable Perl
+6 by Xmas. We just never said which Xmas. Xmas recently happened in July, with
+the release of Rakudo Star Perl 6.
+
+Xmas is here, you can embed Perl 6 in your database!
+
+PL/Perl6 is built upon PL/Parrot. PL/Parrot is the Parrot Virtual Machine,
+embedded into the PostgreSQL relational database. PL/Perl6 works by embedding
+Rakudo Perl 6, an implementation of Perl 6 on Parrot, into PostgreSQL, which
+allows it to be used as a stored procedure language.
+
+This talk will give a quick introduction to Parrot VM and Rakudo Perl 6, and
+why you would want them in your database, including a status update of the
+current feature set of Rakudo Perl 6 and PL/Perl6. Example stored procedures in
+Perl 6 will be shown and, time permitting, the internals of how
+PL/Perl6 works will be described. More information can be found at
+http://pl.parrot.org .
