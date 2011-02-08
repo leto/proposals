@@ -1,0 +1,22 @@
+Google Code-In : Will It Help Your Community?
+
+Google Code-In is a contest designed to introduce pre-university students from
+around the world to various open source communities. Google Code-In 2010 was a
+huge success, with 361 students (ages 13-18) from 48 countries completing a
+total of 2,167 tasks during the 7 week contest period.
+
+Each task is a small unit of work designed by people from the open source community,
+and tasks can range from being research, web design, documentation translation, code,
+graphic design and more. Open source communities get to design basically any task
+that introduces students to the community and makes the student learn something while
+providing value back to the community.
+
+There were 20 organizations involved in 2010, and I suspect Google will expand it in
+the coming years, since it fills a much-needed niche of apprenticeship for extremely
+young and talented students. Should your open source community be involved?
+
+This talk will contain lessons learned from being the Organization Admin for The Perl
+Foundation and Parrot Foundation in Google Code-In 2010, as well as what future org
+admins, mentors and students can expect. It will also describe in detail what it takes
+to make Code-In a valuable experience for all and pitfalls to avoid.
+
