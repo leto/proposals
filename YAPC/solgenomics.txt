@@ -1,0 +1,14 @@
+Solgenomics: Slicing and Dicing Plant Genomes with Perl
+
+The Sol Genomics Network (SGN) is a website which is a platform for plant biologists and
+breeders to search for, curate and visualize data related to plant genomics. SGN is a
+part of the Boyce Thompson Institute for Plant Research, located at Cornell University,
+and is funded by the National Science Foundation.
+
+The SGN website is written in Perl 5 and relies on Catalyst, Moose, DBIx::Class and thousands
+of other CPAN modules. It is a great example of how Perl is being used in academic research
+and every line of code is open source and available on Github.
+
+This lightning talk will give a high-level description of how SGN uses Perl to help researchers
+find, manipulate and visualize their data as well as how SGN contributes back to the Perl 
+community.
