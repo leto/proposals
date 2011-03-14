@@ -1,0 +1,19 @@
+Visual Introduction to Parrot Virtual Machine
+
+Parrot Virtual Machine is a seemingly-complex piece of software that dedicated hackers have been
+working on for over ten years. It currently has mature implementations of Perl 6 and Lua, and
+many dozens of in-progress implementations for every language under the sun.
+
+Because Parrot development moves fast, the documentation for any given subsystem is sometimes
+lagging. It can be hard for a newcomer to understand how all the pieces fit together.
+
+I propose to fix this problem by providing a "Visual Introduction" to Parrot, which will
+focus on information-dense pictures that show how the different parts of Parrot fit together.
+
+The first half of the talk will focus on what the building blocks of Parrot are, and how they
+fit together, while the second half of the talk will concentrate on how languages built on
+Parrot (known as High Level Languages or HLLs) interact with the virtual machine.
+
+Attendees of this talk will leave with a valuable understanding of how Parrot and HLLs on
+Parrot work that will be useful for years to come, instead of being told a bunch of details
+that will be quickly obsoleted.

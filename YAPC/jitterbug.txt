@@ -1,0 +1,19 @@
+Do The Jitterbug: Continuous Integration With Git
+
+Jitterbug is an exciting new continuous integration tool that integrates with Git. The goal
+of Jitterbug is to know how to build and run the test suite code in *any language*. Currently,
+there is support for Perl 5, Perl 6, Parrot, Ruby and Makefile-based projects and many more
+are on the way.
+
+Jitterbug can be used as a post-receive hook on Github or with pure-Git configurations as well.
+It has a pretty web interface that shows a history of commits, with links to test suite outputs
+and the commitdiff. Jitterbug also has a highly configurable email notifier, that can send email
+when test suites fail or pass, and allows templated headers and footers to allow for a customized
+email that contains links to relevant bug trackers or integration environments.
+
+Jitterbug is written in Perl 5 and uses the new Dancer web framework to show a web interface of
+continuous integration data.
+
+This talk will contain a brief introduction to how Jitterbug works, a full tutorial on
+how to install Jitterbug, how to add it as a post-receive hook on Github and finally how to customize
+Jitterbug emails to be as useful as possible.
