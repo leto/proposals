@@ -23,6 +23,8 @@ It will allow a very new and large niche of developers access to Perl 6 and a us
 Deliverables
 Quantifiable results, including referencing a milestone document or a critical path
 
+0) Convert PL/Perl6 + PL/Parrot to use the new parrot embed API
+
 1) PL/Perl6 working on the latest stable release of Rakudo
 
 2) A continuous integration setup such that PL/Perl6 is tested against newer
@@ -37,6 +39,13 @@ Supercell project.
 Project Details
 A more detailed description.
 
+0) PL/Parrot and PL/Perl6 is currently using a deprecated embedding API.
+A newer API is available that behaves better and provides a better interface
+for embedding Parrot into PostgreSQL.
+
+This step is the more work than any other tasks in this grant. It involves
+rewriting the very core C code of PL/Parrot, which PL/Perl6 relies on.
+
 Project Schedule
 How long will the project take (calendar duration, not effort in hours)?
 
@@ -44,43 +53,56 @@ I expect about 6 months.
 
 When can you begin work?
 
+January.
+
 Report Schedule
 How do you plan to provide updates on your work?
-How frequently will these updates be made?
+
+Yes, I plan to prove at least monthly blog posts with updates.
 
 Note that payments on the grant will be contingent on the successful acceptance of milestones and the submission of reports.
 
 Public Repository
 Where will the code be stored upon completion?
+
+https://github.com/leto/plparrot
+
 Where will the change logs be held?
 
-Grant Deliverables ownership/copyright and License Information
-Which OSI license do you plan to release your code (or other deliverables) under? TPF has a preference for Artistic 2.0 but we are willing to discuss other options, including dual-licensing options.
+https://github.com/leto/plparrot
 
-Who and/or which organization will have ownership (copyright) of the grant deliverables? TPF has a preference for itself to be the owner of the deliverables but we are willing to discuss other options, specifically in the situation where the deliverables extend an existing well-established project.
+Grant Deliverables ownership/copyright and License Information
+
+Artistic 2.0
+
+Who and/or which organization will have ownership (copyright) of the grant deliverables? 
+
+Jonathan "Duke" Leto and other contributors
 
 Bio
-Who are you? What makes you the best person to work on this project?
+
+TODO
 
 Country of Residence
 
+USA
+
 Nationality
-Residents and nationals of countries who we are prohibited by U.S. law from engaging in commerce, are ineligible to participate.
+
+USA
 
 Amount Requested
 
-In USD$
+$8000 USD
 
 The nominal maximum monthly payment is USD$5000 for full-time work on the grant. This amount is not changed based on changes to the schedule of the grant once the grant is in process. Payments for varying levels of part-time work will be pro-rated against this nominal amount.
 
 Okay to publish proposal? :
 
-Yes or No
+Yes
 
-This question is whether you are comfortable with us posting your grant request information on http://news.perlfoundation.org/ for public evaluation and comments during its review. All accepted grants will be published on http://news.perlfoundation.org/ and http://www.perlfoundation.org/
-
-Personal contact information will be omitted from postings.
 
 Suggestions for Grant Manager
 
-All TPF grants have a Grant Manager assigned to them. This person is a volunteer who can, on TPF's behalf, maintain communication with the grant recipient throughout the duration of the grant to track progress and accept (or deny) grant milestones and deliverables. The grant manager should be someone who is intelligent, earnest, conscientious, knowledgeable/expert in the technical material of the grant and someone with a good and trusted reputation in the Perl community.
+Coke?
+
