@@ -1,0 +1,86 @@
+Name
+
+Jonathan "Duke" Leto
+
+Email & Phone
+
+duke@leto.net, 209.691.DUKE
+
+Project Title
+
+PL/Perl6
+
+Synopsis
+
+The proposed grant would support the development of PL/Perl6, which allows
+people to use Perl 6 as a stored procedure language in the PostgreSQL database.
+
+Benefits to Perl 6 Development
+How will this advance the release of Perl 6?
+
+It will allow a very new and large niche of developers access to Perl 6 and a use case for it.
+
+Deliverables
+Quantifiable results, including referencing a milestone document or a critical path
+
+1) PL/Perl6 working on the latest stable release of Rakudo
+
+2) A continuous integration setup such that PL/Perl6 is tested against newer
+versions of Parrot + Rakudo, so the current situation does not happen again.
+This will probably be implemented on the GCC Compile Farm and/or the OSUOSL
+Supercell project.
+
+3) User-friendly web documentation for developers wanting to use PL/Perl6
+
+4) User-friendly web documentation for installing PL/Perl6
+
+Project Details
+A more detailed description.
+
+Project Schedule
+How long will the project take (calendar duration, not effort in hours)?
+
+I expect about 6 months.
+
+When can you begin work?
+
+Report Schedule
+How do you plan to provide updates on your work?
+How frequently will these updates be made?
+
+Note that payments on the grant will be contingent on the successful acceptance of milestones and the submission of reports.
+
+Public Repository
+Where will the code be stored upon completion?
+Where will the change logs be held?
+
+Grant Deliverables ownership/copyright and License Information
+Which OSI license do you plan to release your code (or other deliverables) under? TPF has a preference for Artistic 2.0 but we are willing to discuss other options, including dual-licensing options.
+
+Who and/or which organization will have ownership (copyright) of the grant deliverables? TPF has a preference for itself to be the owner of the deliverables but we are willing to discuss other options, specifically in the situation where the deliverables extend an existing well-established project.
+
+Bio
+Who are you? What makes you the best person to work on this project?
+
+Country of Residence
+
+Nationality
+Residents and nationals of countries who we are prohibited by U.S. law from engaging in commerce, are ineligible to participate.
+
+Amount Requested
+
+In USD$
+
+The nominal maximum monthly payment is USD$5000 for full-time work on the grant. This amount is not changed based on changes to the schedule of the grant once the grant is in process. Payments for varying levels of part-time work will be pro-rated against this nominal amount.
+
+Okay to publish proposal? :
+
+Yes or No
+
+This question is whether you are comfortable with us posting your grant request information on http://news.perlfoundation.org/ for public evaluation and comments during its review. All accepted grants will be published on http://news.perlfoundation.org/ and http://www.perlfoundation.org/
+
+Personal contact information will be omitted from postings.
+
+Suggestions for Grant Manager
+
+All TPF grants have a Grant Manager assigned to them. This person is a volunteer who can, on TPF's behalf, maintain communication with the grant recipient throughout the duration of the grant to track progress and accept (or deny) grant milestones and deliverables. The grant manager should be someone who is intelligent, earnest, conscientious, knowledgeable/expert in the technical material of the grant and someone with a good and trusted reputation in the Perl community.
