@@ -82,7 +82,7 @@ are not being broken.
 
 The needs of the CI system are:
 
-On each new commit to Rakudo nom branch, test against:
+On each new commit to Rakudo nom branch (the development tip), test against:
 
     Postgres 9.1, PL/Perl6 master, g++ compiler
     Postgres 8.4, PL/Perl6 master, gcc compiler
@@ -90,7 +90,7 @@ On each new commit to Rakudo nom branch, test against:
 On each commit to PL/Perl6 on any branch:
 
     Postgres 9.1, Rakudo nom, g++ compiler
-    Postgres 8.4, PL/Perl6 master, gcc compiler
+    Postgres 8.4, Rakudo nom, gcc compiler
 
 This is just the beginning, but with this, we will have a wealth of data about
 how versions of Rakudo and PL/Perl6 behave together, across the two major
