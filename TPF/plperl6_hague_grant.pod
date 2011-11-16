@@ -8,7 +8,7 @@ duke@leto.net, 209.691.DUKE
 
 Project Title
 
-PL/Perl6
+PL/Perl6 Infrastructure and Improvements
 
 Synopsis
 
@@ -18,38 +18,105 @@ people to use Perl 6 as a stored procedure language in the PostgreSQL database.
 Benefits to Perl 6 Development
 How will this advance the release of Perl 6?
 
-It will allow a very new and large niche of developers access to Perl 6 and a use case for it.
+It will allow a very new and large niche of developers access to Perl 6 and
+provide a use case for it.
 
 Deliverables
 Quantifiable results, including referencing a milestone document or a critical path
 
-0) Convert PL/Perl6 + PL/Parrot to use the new parrot embed API
-
 1) PL/Perl6 working on the latest stable release of Rakudo
 
+There is currently a bug which causes some PL/Perl6 tests to crash Postgres.
+This could be from something that changed in Parrot, Rakudo or both. Because
+there was no system testing PL/Perl6 on newer releases of Rakudo, this got
+broken and has yet to be fixed.
+
 2) A continuous integration setup such that PL/Perl6 is tested against newer
-versions of Parrot + Rakudo, so the current situation does not happen again.
+versions of Parrot + Rakudo, so that 1) does not happen again.
+
 This will probably be implemented on the GCC Compile Farm and/or the OSUOSL
-Supercell project.
+Supercell project. Documentation about how to install and maintain this CI
+environment will be included.
 
 3) User-friendly web documentation for developers wanting to use PL/Perl6
 
-4) User-friendly web documentation for installing PL/Perl6
+This will include one set of documentation that is an overview and intro the
+API, and another set of documentation which gives various examples, such
+as using a Perl 6 Grammar in a stored procedure.
+
+4) User-friendly web documentation for installing/compiling PL/Perl6
+
+This documentation will guide people on how to compile PL/Perl6 from a release
+tarball, from the Git repo or from a package manager.
+
+5) Screencast showing how to write a stored procedure in Perl 6
+
+A screencast that can be used for promoting Perl 6 in PostgreSQL will also be a deliverable.
+This will show how to write a stored procedure in Perl 6 and what it looks like when it runs.
 
 Project Details
 A more detailed description.
 
-0) PL/Parrot and PL/Perl6 is currently using a deprecated embedding API.
-A newer API is available that behaves better and provides a better interface
-for embedding Parrot into PostgreSQL.
+1) The object is for the PL/Perl6 test suite to pass on the latest stable release
+of Rakudo, or whatever Rakudo devs would prefer that works with PL/Perl6.
 
-This step is the more work than any other tasks in this grant. It involves
-rewriting the very core C code of PL/Parrot, which PL/Perl6 relies on.
+Currently, one of the PL/Perl6 tests causes PostgreSQL to coredump due to a
+change in Parrot or Rakudo or both. This needs to be debugged and either
+something in PL/Perl6 , Parrot or Rakudo needs to be fixed.
+
+This will involve working with Rakudo core devs as well as Parrot core devs to
+resolve this situation. More tests will also be added in the process to
+insure against future breakage.
+
+2) This is actually the most work and most important part of this grant.
+Without a continuous integration system, something like PL/Perl6 can't stay
+alive. Since PL/Perl6 ties together multiple pieces of *very* different
+software (PostgreSQL, Parrot, Rakudo) it needs to continually be tested on new
+versions of these dependencies to make sure it continues to work properly.
+Also, this continual testing leaves the data behind that people can look at
+to fix and maintain PL/Perl6. Without that data, maintenance isn't really possible.
+
+The data in this CI system will provide the data that Parrot, Rakudo and PL/Perl6
+developers need to fix bugs and make improvements with the knowledge that things
+are not being broken.
+
+The needs of the CI system are:
+
+On each new commit to Rakudo nom branch, test against:
+
+    Postgres 9.1, PL/Perl6 master, g++ compiler
+    Postgres 8.4, PL/Perl6 master, gcc compiler
+
+On each commit to PL/Perl6 on any branch:
+
+    Postgres 9.1, Rakudo nom, g++ compiler
+    Postgres 8.4, PL/Perl6 master, gcc compiler
+
+This is just the beginning, but with this, we will have a wealth of data about
+how versions of Rakudo and PL/Perl6 behave together, across the two major
+versions of Postgres that PL/Perl6 supports. Also, having data for both a C and
+a C++ compiler is valuable because many bugs only become apparent in one or the
+other.
+
+3+4) The user-friendly developer + compile/install documentation will be a Git
+repo that is also a website, hosted for free on Github. This will also make it
+easy to get contributors for the website as Github pull requests. This could be
+hosted in the perl6 Github organization, in which case all current committers
+to perl6 would have the ability to update the website.
+
+5) Screencasts have become a very important tool for gaining new users and
+providing entertaining introductions to new subjects. To my knowledge, Perl 6
+has never had a screencast, and if it has, it surely can benefit from more.
+The estimated time of the screencast is 2-5 minutes. It will go through the
+process of writing a stored procedure in Perl 6, running it, modifying the
+stored procedure and running it again to see the modified output. If time
+allows, other examples will be shown and part of the compile/install process
+will be shown.
 
 Project Schedule
 How long will the project take (calendar duration, not effort in hours)?
 
-I expect about 6 months.
+I expect about 4 months, working 1/4 time (10 hours per week).
 
 When can you begin work?
 
@@ -67,6 +134,10 @@ Where will the code be stored upon completion?
 
 https://github.com/leto/plparrot
 
+Releases are also hosted on PGXN, which is the Postgres equivalent of CPAN:
+
+http://pgxn.org/dist/plparrot/html/plperl6.html
+
 Where will the change logs be held?
 
 https://github.com/leto/plparrot
@@ -81,7 +152,17 @@ Jonathan "Duke" Leto and other contributors
 
 Bio
 
-TODO
+I have hacked on Parrot Virtual Machine and Perl 6 ever since I attended a
+Parrot Hackathon in 2008.  I started off hacking on the Perl 6 test suite,
+after getting a commit bit from Larry at the hackathon due to my interest in
+fixing some bugs and adding tests relating to math functions and complex
+numbers. I have made contributions to Rakudo Perl 6, the Perl 6 test suite,
+written Perl 6 modules and I am still active as a Parrot Core Developer,
+Board Member of Parrot Foundation and Community Manager of Parrot.
+
+As for other credentials, I have a Masters in Mathematics from University of
+Central Florida and have published various papers on differential equations,
+as well as being a coauthor of the Google Summer of Code Mentor Manual [8].
 
 Country of Residence
 
@@ -93,9 +174,7 @@ USA
 
 Amount Requested
 
-$8000 USD
-
-The nominal maximum monthly payment is USD$5000 for full-time work on the grant. This amount is not changed based on changes to the schedule of the grant once the grant is in process. Payments for varying levels of part-time work will be pro-rated against this nominal amount.
+$5000 USD
 
 Okay to publish proposal? :
 
@@ -104,5 +183,6 @@ Yes
 
 Suggestions for Grant Manager
 
-Coke?
-
+Makoto Nozaki was my previous TPF grant manager and we got along well. A grant
+manager that is involved in Perl 6 could be beneficial, but I do not have one
+in mind.
