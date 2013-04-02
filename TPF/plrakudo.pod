@@ -1,0 +1,80 @@
+
+=head1 PL/Rakudo Part 1: PL/Parrot Reboot
+
+=over 1
+
+=item Name:
+
+Jonathan "Duke" Leto
+
+=item Email:
+
+jonathan@leto.net
+
+=item Amount Requested:
+
+$3000
+
+=back
+
+=head2 Synopsis
+
+PL/Parrot allows one to embed Parrot Virtual Machine into PostgreSQL and make
+it available as a stored procedure language. PL/Rakudo (previously called
+PL/Perl6) uses Rakduo Perl 6 from PL/Parrot to enable one to write stored
+procedures in Rakudo Perl 6. Basically, PL/Rakudo is the spunky kid sister of
+PL/Perl and uses PL/Parrot to load the Rakudo Perl 6 High Level Language (HLL).
+
+Currently PL/Parrot is out of date and needs to be updated to the new Parrot
+embedding API, as well as updating to PostgreSQL 9.x and taking into account
+changes to Rakudo that have happened in the meantime.
+
+This grant proposal can be thought of as #1 in the beginning of a series of 4 grants:
+
+    1) Rewrite PL/Parrot from scratch with the new Parrot embed API
+    2) Update PL/Parrot to use PostgreSQL 9.x language best practices
+    3) Implement new PL/PIR and PL/Winxed, which are core Parrot Languages
+    4) Write a new PL/Rakudo using PL/Winxed
+
+=head2 Benefits to the Perl Community
+
+PL/Rakudo will allow people to write stored procedures in PostgreSQL with Rakudo Perl 6, which
+will make Rakudo fell much more "production-ish".
+
+=head2 Deliverables
+
+=head2 Project Details
+
+Many small details need to be added here.
+
+=head2 Inch-stones
+
+If your grant is going to take longer than a week it's useful to break
+down your project into small chunks. This helps everybody track of
+progress, and lets you see if your project schedule is practical!
+
+Try and think in "inch-stones" rather than "mile-stones". Breaking down
+your grant into many small goals makes it harder to overlook
+difficulties, and easier to see progress as you complete your grant.
+
+=head2 Project Schedule
+
+=head2 Completeness Criteria
+
+This grant will be considered complete when the above-added features are
+present in a release of PL/Parrot. PL/Parrot will target PostgreSQL 9.x,
+the latest stable release of Parrot Virtual Machine and
+Rakudo Perl 6.
+
+This release will be available for download on github.com and will
+be released on the PostgreSQL Extension Network, PGXN.
+
+=head2 Bio
+
+Who are you? What makes you the best person to work on this project?
+
+=head2 References
+
+[1] http://www.pgxn.org
+
+=cut
